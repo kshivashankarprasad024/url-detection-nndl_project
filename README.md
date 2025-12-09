@@ -3,7 +3,7 @@
 
 ## Academic Information
 - **Subject**: Neural Networks and Deep Learning (NNDL)
-- **Project Type**: Advanced Application Technology (AAT)
+- **Project Type**: AAT
 - **Domain**: Cybersecurity and Machine Learning
 - **Academic Year**: 2025
 
