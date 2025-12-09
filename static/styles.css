@@ -1,0 +1,120 @@
+/* ==========================================
+   CyberGuard - Clean Bootstrap Design
+   Author: shiva kalyankar
+   Date: 2025
+   Description: Minimal custom styles with Bootstrap
+   ========================================== */
+
+/* ==========================================
+   CUSTOM FONTS
+   ========================================== */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ==========================================
+   PROGRESS CIRCLE ANIMATION
+   ========================================== */
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+.progress-bar-circle {
+  stroke-dasharray: 314; /* 2 * π * 50 */
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* ==========================================
+   SUBTLE HOVER EFFECTS
+   ========================================== */
+.card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* ==========================================
+   FORM ENHANCEMENTS
+   ========================================== */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.form-control.is-valid {
+  border-color: #198754;
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+/* ==========================================
+   ICON HOVER EFFECTS
+   ========================================== */
+.tech-stack i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.tech-stack i:hover {
+  transform: scale(1.2);
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================== */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .progress-circle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .progress-circle circle {
+    r: 40;
+    cx: 50;
+    cy: 50;
+  }
+  
+  .progress-bar-circle {
+    stroke-dasharray: 251; /* 2 * π * 40 */
+    stroke-dashoffset: 251;
+  }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==========================================
+   PRINT STYLES
+   ========================================== */
+@media print {
+  .btn,
+  .modal {
+    display: none !important;
+  }
+}
